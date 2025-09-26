@@ -1,0 +1,4 @@
+AGENTS.md
+env/
+.venv/
+node_modules/
