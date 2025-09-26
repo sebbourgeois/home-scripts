@@ -1,0 +1,14 @@
+[Unit]
+Description=Bypass local LAN outside NordLayer full-tunnel
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# Run without an argument to auto-detect interface. Replace or override if desired.
+ExecStart=/usr/local/bin/fix-nordlayer-local-lan.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
