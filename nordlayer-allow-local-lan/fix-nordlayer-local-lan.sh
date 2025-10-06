@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 # fix-nordlayer-lan.sh (v2)
-# Re-route local LAN outside NordLayer (full-tunnel) on Ubuntu 24.04.
-# Optional arg: interface name (e.g., wlp4s0). If omitted, auto-detects.
-
 set -euo pipefail
-
 log(){ echo "[*] $*"; }
 err(){ echo "[!] $*" >&2; }
 
